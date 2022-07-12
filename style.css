@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+}
+
+.calculator {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 5px solid white;
+  padding: 10px;
+}
+.calculator__display {
+  background-color: black;
+  text-align: right;
+}
+.calculator__display--default-text {
+  margin: 1rem;
+  font-size: 3.5rem;
+}
+.calculator__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "ac ac ac divide" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equals";
+  gap: 5px;
+}
+.calculator__grid--item {
+  text-align: center;
+  padding: 1.5rem;
+}
+.calculator__grid--item-clear {
+  background-color: darkgray;
+  border-radius: 40px;
+}
+.calculator__grid--item-operators {
+  background-color: darkorange;
+  border-radius: 50%;
+}
+.calculator__grid--item-digits {
+  background-color: dimgray;
+  border-radius: 50%;
+}
+.calculator__grid--item-zero {
+  background-color: dimgray;
+  border-radius: 40px;
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#six {
+  grid-area: six;
+}
+
+#five {
+  grid-area: five;
+}
+
+#four {
+  grid-area: four;
+}
+
+#three {
+  grid-area: three;
+}
+
+#two {
+  grid-area: two;
+}
+
+#one {
+  grid-area: one;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#dot {
+  grid-area: dot;
+}
