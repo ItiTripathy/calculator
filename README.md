@@ -2,6 +2,8 @@
 
 This is a simple calculator developed using JavaScript, HTML &amp; SCSS
 
+# Target Image
+
 ![TargetImage](./images/target-image.png)
 
 ##Part I MVP
