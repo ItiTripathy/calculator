@@ -6,6 +6,10 @@ This is a simple calculator developed using JavaScript, HTML &amp; SCSS
 
 ![TargetImage](./images/target-image.png)
 
+## Actual Image
+
+![TargetImage](./images/final-image.png)
+
 ## Part I MVP
 
 1. Create a calculator to be rendered to the html page
@@ -16,7 +20,7 @@ This is a simple calculator developed using JavaScript, HTML &amp; SCSS
 
 ## Implementation
 
-### HTML Implementation (index.html file)
+## HTML Implementation (index.html file)
 
 1. A display section with the default text 0
 2. A Grid section containing the following :
@@ -35,7 +39,7 @@ This is a simple calculator developed using JavaScript, HTML &amp; SCSS
 3. It doesn’t need to support orders of operation
 4. It should not use eval() or Function() constructor
 
-### JavaScript implementation (script.js file)
+## JavaScript implementation (script.js file)
 
 1. Display shows the default text 0 at the beginning of a calculation.
 2. The AC button clears the display and resets it to show 0. (acBtn.addEventListener)
@@ -43,6 +47,31 @@ This is a simple calculator developed using JavaScript, HTML &amp; SCSS
 4. The operator buttons are passed to a function which does the actual arithmetic calculation based on the display expression.(const result = calculate(initialValue, currentValue, currentOperator))
 5. The decimal button turns the numbers into decimal by adding 0.(display.textContent = "0.")
 
-## Actual Image
+## Setup
 
-![TargetImage](./images/final-image.png)
+-   Install VS Code for development
+
+-   GitHub setup for adding the project to the repository : Important Commands :
+
+    -   git remote add origin git@github.com:ItiTripathy/portfolio-website.git
+    -   git add .
+    -   git commit -m "Comment"
+    -   git push origin main
+
+-   Install and run SCSS settings : Important Command [sass --watch --no-source-map style.scss style.css ]
+
+## Known issues
+
+-   Allows multiple decimal points. To be fixed.
+
+## Future goals / changes
+
+-   To add responsiveness to the app.
+
+## Issues/Roadblocks faced
+
+-   Numbers flowing out of screen. Fixed it by fixing the number of digits after decimal point.
+
+## Contribution
+
+-   Favicon was designed using the website : https://www.favicon.cc/
